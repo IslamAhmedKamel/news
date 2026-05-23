@@ -7,6 +7,14 @@ final class GetNewsInitial extends GetNewsState {}
 
 final class GetNewsLoading extends GetNewsState {}
 
-final class GetNewsSucsece extends GetNewsState {}
+final class GetNewsSucsece extends GetNewsState {
+  final List<NewsItemModel> newsList;
 
-final class GetNewsFailure extends GetNewsState {}
+  GetNewsSucsece({required this.newsList});
+}
+
+final class GetNewsFailure extends GetNewsState {
+  final String errorMessage;
+
+  GetNewsFailure({required this.errorMessage});
+}
