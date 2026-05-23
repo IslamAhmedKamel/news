@@ -5,6 +5,15 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: []);
+    return Column(children: [CatygoryItem()]);
+  }
+}
+
+class CatygoryItem extends StatelessWidget {
+  const CatygoryItem({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container();
   }
 }
