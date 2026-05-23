@@ -9,7 +9,7 @@ class CatygoryItem extends StatelessWidget {
     return AspectRatio(
       aspectRatio: 1.2 / 1,
       child: Container(
-        margin: const EdgeInsets.only(left: 8),
+        margin: const EdgeInsets.only(left: 8, top: 12, bottom: 12),
 
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(12),
