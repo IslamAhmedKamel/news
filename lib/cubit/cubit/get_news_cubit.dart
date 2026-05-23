@@ -21,7 +21,7 @@ class GetNewsCubit extends Cubit<GetNewsState> {
               "لا يتوفر اتصال بالانترنت حاول لاحقاً شكرا لاستخدامك تطبيقنا ",
         ),
       );
-    } on Exception catch (e) {
+    } on Exception {
       emit(GetNewsFailure(errorMessage: "there was an error try again"));
     }
   }
